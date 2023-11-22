@@ -28,7 +28,6 @@ export const Calculator = () => {
     });
     
 
-
     return (
         <div>
          <h1>My Calculator</h1>
