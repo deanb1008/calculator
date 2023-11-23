@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CalculatorButtons } from './CalculatorButtons';
 import { CalculatorDisplay } from './CalculatorDisplay';
 //import { useState } from 'react';
-
+import './calculator.css'; 
 import * as math from 'mathjs';
 
 export const Calculator = () => {
@@ -27,12 +27,11 @@ export const Calculator = () => {
             }
     });
     
-
     return (
         <div>
-         <h1>My Calculator</h1>
+         <h1>My Boss Calculator</h1>
          <CalculatorDisplay input = {input} result = {result} /> 
-            <div className = 'buttons'>
+            <div className = 'buttons calcContainer'>
                 <div className = 'calc-row'>
                     {
                         ['7', '8', '9', '/'].map( (value) => {
